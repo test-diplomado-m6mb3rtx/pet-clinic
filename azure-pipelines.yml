@@ -37,7 +37,7 @@ steps:
     sonarQubeGradlePluginVersion: '3.3'
     spotBugsAnalysis: false
     
-- task: sonarcloud-buildbreaker
+- task: sonarcloud-buildbreaker@2
   inputs:
     SonarCloud: 'SonarCloud'
     organization: 'm6mb3rtx'
