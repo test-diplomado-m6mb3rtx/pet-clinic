@@ -36,7 +36,10 @@ steps:
     sqGradlePluginVersionChoice: 'specify'
     sonarQubeGradlePluginVersion: '3.3'
     spotBugsAnalysis: false
-
+- task: sonarcloud-buildbreaker@2
+  inputs:
+    SonarCloud: 'SonarCloud'
+    organization: 'm6mb3rtx'
 
 - task: dependency-check-build-task@6
   inputs:
